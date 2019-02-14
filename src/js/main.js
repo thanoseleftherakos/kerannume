@@ -17,12 +17,24 @@ $(document).ready(function(){
         itemSelector: '.grid__item',
         percentPosition: true,
       });
-      $('.grid__item').each(function(){
-        var m = Math.floor(Math.random() * 20) + 1  ;
-        var h = Math.floor(Math.random() * 20) + 1  ;
-        var width = Math.floor(Math.random() * (40 - 20 + 1)) + 20;
-        $(this).css({'max-width' :450+'px',  'margin-left' : m+'em', 'margin-top' : h+'em'});
-      })
+
+      
+          $('.grid__item').each(function(){
+              
+              var m = Math.floor(Math.random() * 10) + 1  ;
+              var h = Math.floor(Math.random() * 10) + 1  ;
+                
+              if ($(window).width() < 769 ) {
+                var m = Math.floor(Math.random() * 10) + 1  ;
+                var h = Math.floor(Math.random() * 5) + 1  ;
+                $(this).css({'max-width' :30+'vw',  'margin-left' : m+'em', 'margin-top' : h+'em'});
+              } else if ($(window).width() > 769 ) {
+                  $(this).css({'max-width' :450+'px',  'margin-left' : m+'em', 'margin-top' : h+'em'});
+              } else {
+                  return;
+              }
+          })
+
       pckry.layout();
       pckry.once( 'layoutComplete', function() {
         $('.grid').css({'opacity': 1});

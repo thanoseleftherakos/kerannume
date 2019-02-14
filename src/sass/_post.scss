@@ -27,12 +27,19 @@
         @media screen and (max-width: $tablet) {
             font-size: 5em;
         } 
+        @media screen and (max-width: $mobile) {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        } 
     }
     &__description {
         text-align: center;
         font-size: 1.5em;
         line-height: $line-height-post-description;
         width: 100%;
+        @media screen and (max-width: $mobile) {
+            font-size: 1.3em;
+        } 
     }
     &__by {
         margin-top: 60px;
@@ -41,6 +48,10 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
         letter-spacing: 2px;
+        @media screen and (max-width: $mobile) {
+            font-size: 0.8em;
+            margin-top: 30px;
+        } 
     }
     &__thumbnail {
         width: 100%;
@@ -53,6 +64,10 @@
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.2em;
+        @media screen and (max-width: $mobile) {
+            font-size: 0.8em;
+            padding: 10px 0px 30px;
+        }
     }
     &__content {
         font-size: 1.2em;
@@ -60,11 +75,18 @@
         width: 100%;
         line-height: $line-height-post-content;
         margin-bottom: 30px;
+        @media screen and (max-width: $mobile) {
+            font-size: 1em;
+
+        }
     }
     &__double-photos {
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+        }
         figure {
         &:first-child {
             padding-right: 10px;
@@ -78,12 +100,20 @@
 }
 
 .footnotes {
-    padding: 90px 0px;
+    padding: 90px 20px;
     font-size: 0.8em;
     -webkit-column-count: 3;
     -moz-column-count: 3;
-         column-count: 3;
- -webkit-column-gap: 3em;
+    column-count: 3;
+    -webkit-column-gap: 3em;
     -moz-column-gap: 3em;
-         column-gap: 3em; 
+    column-gap: 3em; 
+    @media screen and (max-width: $mobile) {
+        padding: 20px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 2em;
+        -moz-column-gap: 2em;
+        column-gap: 2em;     }
 }

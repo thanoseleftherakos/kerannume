@@ -20,7 +20,10 @@
         font-size: 14em;
         line-height: 1.05;
         @media screen and (max-width: $tablet) {
-            font-size: 14em;
+            font-size: 11em;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 5em;
         }
         span {
             display: block;

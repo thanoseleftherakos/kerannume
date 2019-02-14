@@ -14,11 +14,17 @@
         font-size: 1.8em;
         text-align: center;
         line-height: $line-height-post-description;
+        @media screen and (max-width: $mobile) {
+            font-size: 1.3em;
+        } 
     }
     &__content {
         margin-top: 50px;
         font-size: 1.6em;
         line-height: $line-height-post-content;
         text-align: justify;
+        @media screen and (max-width: $mobile) {
+            font-size: 1em;
+        } 
     }
 }
