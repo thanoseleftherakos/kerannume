@@ -1,0 +1,115 @@
+.menu {
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    z-index: 10;
+    @media screen and (max-width: $tablet) {
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+    } 
+    &__icon {
+        width: 60px;
+        @media screen and (max-width: $tablet) {
+            width: 80px;
+        } 
+    }
+    &__logo {
+        width: 20px;
+        @media screen and (max-width: $tablet) {
+            display: none;
+        } 
+    }
+    &__mobile-logo {
+        display: none;
+        @media screen and (max-width: $tablet) {
+            display: block;
+            width: auto;
+            height: 30px;
+        } 
+    }
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $menu-grey;
+    position: fixed;
+    width: 50%;
+    height: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 11;
+    transition: all 0.25s ease-in-out;
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
+    &__close {
+        width: 50px;
+        height: 50px;
+        border: 1px solid $off-white;
+        margin: 20px;
+    }
+    &__list {
+        font-family: 'Architype-Tschichold';
+        margin: auto;
+        text-align: center;
+        font-size: 50px;
+        color: $off-white;
+        @media screen and (max-width: $tablet) {
+            font-size: 6em;
+        }
+        li {
+            padding: 20px;
+            a {
+                text-decoration: none;
+                color: $off-white;
+            }
+        }
+    }
+}
+
+.show {
+    height: 100vh !important;
+}
+
+.close {
+    position: absolute;
+    left: 32px;
+    color: $off-white;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    @media screen and (max-width: $tablet) {
+        left: 38px;
+        top: 20px;
+        width: 62px;
+        height: 62px;
+    }
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 30px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $off-white;
+    @media screen and (max-width: $tablet) {
+        height: 100px;
+        width: 7px;
+    }
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }

@@ -1,0 +1,26 @@
+@import "bootstrap";
+@import "fontawesome";
+@import "reset";
+
+@import "media-queries";
+@import "fonts";
+@import "colors";
+@import "variables";
+
+@import "container";
+
+@import "menu";
+
+@import "home";
+@import "post";
+@import "contact";
+@import "about";
+
+
+@import "footer";
+
+
+
+html {
+    scroll-behavior: smooth;
+  }

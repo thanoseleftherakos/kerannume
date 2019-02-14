@@ -1,0 +1,64 @@
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 100px;
+    &__logo {
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+        padding: 50px;
+    }
+    &__title {
+        font-family: 'Architype-Tschichold';
+        font-size: 60px;
+        text-align: center;
+        &__join {
+            font-family: 'Architype-Tschichold';
+            font-size: 60px;
+            text-align: center;
+            margin-top: 70px;
+        }
+    }
+    &__info {
+        text-align: center;
+        font-family: 'FutFolli-Book';
+        font-size: 20px;
+        line-height: 1.3em;
+        a {
+            text-decoration: none;
+            border-bottom: $underline;
+        }
+    }
+    &__form {
+        width: 100%;
+        margin-top: 30px;
+        &__field {
+            display: flex;
+            align-items: flex-end;
+        }
+        &__label {
+            font-family: 'FutFolli-Book';
+            width: auto;
+            font-size: 20px;
+            margin-right: 3px;
+        }    
+        input {
+            min-width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px dotted;
+        }
+    }
+    &__designedBy {
+        font-family: 'FutFolli-Book';
+        position: fixed;
+        font-size: 14px;
+        bottom: 120px;
+        right: -90px;
+        transform: rotate(-90deg);
+    }
+
+}

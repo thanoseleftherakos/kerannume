@@ -1,0 +1,89 @@
+.post {
+    width: 100%;
+    height: 100%;
+    font-family: 'FutFolli-Book';
+    &__date {
+        border-bottom: $underline;
+        width: fit-content;
+        font-size: 1em;
+        padding-top: 40px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        @media screen and (max-width: $tablet) {
+            padding-top: 100px;
+        } 
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Architype-Tschichold';
+        font-size: 8em;
+        margin-top: 20px;
+        @media screen and (max-width: $tablet) {
+            font-size: 5em;
+        } 
+    }
+    &__description {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: $line-height-post-description;
+        width: 100%;
+    }
+    &__by {
+        margin-top: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    &__thumbnail {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    &__figcaption {
+        padding: 40px 0px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    &__content {
+        font-size: 1.2em;
+        text-align: justify;
+        width: 100%;
+        line-height: $line-height-post-content;
+        margin-bottom: 30px;
+    }
+    &__double-photos {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        figure {
+        &:first-child {
+            padding-right: 10px;
+        }
+        &:last-child {
+            padding-left: 10px;
+        }
+        }
+
+    }
+}
+
+.footnotes {
+    padding: 90px 0px;
+    font-size: 0.8em;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
+ -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+         column-gap: 3em; 
+}
