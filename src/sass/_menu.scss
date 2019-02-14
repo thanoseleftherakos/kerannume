@@ -40,11 +40,12 @@
     background-color: $menu-grey;
     position: fixed;
     width: 50%;
-    height: 0;
+    height: 100vh;
     top: 0;
     overflow: hidden;
     z-index: 11;
-    transition: all 0.25s ease-in-out;
+    transform: translateX(-100vw);
+    transition: transform 0.4s ease-in-out;
     @media screen and (max-width: $tablet) {
         width: 100%;
     }
@@ -74,16 +75,16 @@
 }
 
 .show {
-    height: 100vh !important;
+    transform: translateX(0);
 }
 
 .close {
     position: absolute;
-    left: 32px;
+    left: 15px;
     color: $off-white;
-    top: 32px;
-    width: 32px;
-    height: 32px;
+    top: 30px;
+    width: 42px;
+    height: 42px;
     opacity: 0.3;
     @media screen and (max-width: $tablet) {
         left: 38px;
@@ -99,7 +100,7 @@
     position: absolute;
     left: 30px;
     content: ' ';
-    height: 33px;
+    height: 43px;
     width: 2px;
     background-color: $off-white;
     @media screen and (max-width: $tablet) {
