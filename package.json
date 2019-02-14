@@ -43,6 +43,7 @@
     "yargs": "^6.3.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0",
+    "packery": "^2.1.2"
   }
 }
