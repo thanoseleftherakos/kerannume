@@ -14,9 +14,9 @@
     } 
     &__icon {
         width: 50px;
-        // @media screen and (max-width: $mobile) {
-        //     width: 40px;
-        // } 
+        @media screen and (max-width: $mobile) {
+            width: 40px;
+        } 
     }
     &__logo {
         width: 20px;
@@ -29,7 +29,7 @@
         @media screen and (max-width: $mobile) {
             display: block;
             width: auto;
-            height: 20px;
+            height: 15px;
         } 
     }
 }

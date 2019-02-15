@@ -7,14 +7,14 @@
     &__title {
         padding-top: 50px;
         font-family: 'Architype-Tschichold';
-        font-size: 5em;
+        font-size: 4em;
         text-align: center;
         @media screen and (max-width: $tablet) {
-            font-size: 6em;
+            font-size: 5em;
+            padding-top: 0;
         }
         @media screen and (max-width: $mobile) {
             font-size: 3em;
-            padding-top: 0;
 
         }
     }
@@ -64,7 +64,7 @@
             &__img {
                 margin-bottom: 30px;
                 @media screen and (max-width: $tablet) {
-                    width: 50%;
+                    width: 20%;
                     margin-bottom: 0px;
                 }
 
@@ -74,8 +74,8 @@
             width: fit-content;
             margin: auto;
             border-bottom: $underline;
-            font-size: 1.3em;
-            letter-spacing: 2px;
+            font-size: 1.1em;
+            letter-spacing: 3px;
             font-family: 'Times New Roman', Times, serif;
             font-weight: 700;
             text-transform: uppercase;
@@ -88,22 +88,21 @@
             }
         }
         &__post {
-            padding: 20px 40px;
-            padding-bottom: 60px;
+            padding: 20px 15px;
             @media screen and (max-width: $tablet) {
                 flex: 0 0 auto;
                 border-bottom: 1px solid $footer-text;
-                padding: 0px 30px;
             }
             &__thumbnail {
                 padding-bottom: 20px;
+                max-width: 80%;
                 @media screen and (max-width: $tablet) {
-                    max-width: 80vw;
                     margin: auto;
                 }
             }
             &__date {
                 font-size: 0.5em;
+                line-height: 1.5em;
                 width: fit-content;
                 margin: 0 auto;
                 border-bottom: $underline;
@@ -160,6 +159,7 @@
                 }
                 span {
                     display: block;
+                    margin-bottom: 5px;
                 }
             }
         }

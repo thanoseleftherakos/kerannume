@@ -6,7 +6,8 @@
         width: 100%;
         @media screen and (max-width: $tablet)  {
             max-width: 1000px; 
-
+            padding: 0 80px;
+            
         }     
         @media screen and (max-width: $mobile) {
             padding: 0 10px;
@@ -24,6 +25,9 @@
         max-width: 800px; 
         margin: auto;
         @media screen and (max-width: $tablet) {
+            padding: 0 80px;
+        } 
+        @media screen and (max-width: $mobile) {
             padding: 0 30px;
         } 
     }
